@@ -1,0 +1,24 @@
+<div class="container my-5">
+    <h2 class="text-center text-black-50 mb-3 text-decoration-underline">Pipes Practice</h2>
+    <input type="text" class="search-input form-control w-25 mb-3" placeholder="Search element by name" [(ngModel)] ="searchField" >
+    <h6 class="d-inline text-black-50">You are searching :</h6>  {{searchField}}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Position</th>
+                <th>Name</th>
+                <th>Weight</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let element of (elements | searchFilter : searchField)">
+                <td>{{element.position}}</td>
+                <td>{{element.name}}</td>
+                <td>{{element.weight}}</td>
+                <td>{{element.symbol}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+</div>
