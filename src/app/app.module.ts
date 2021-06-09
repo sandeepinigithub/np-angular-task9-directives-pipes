@@ -9,6 +9,7 @@ import { HighlightDirective } from './directives/highlight.directive';
 import { HomeComponent } from './home/home.component';
 import { SearchFilterPipe } from './pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     HighlightDirective,
     HomeComponent,
-    SearchFilterPipe
+    SearchFilterPipe,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

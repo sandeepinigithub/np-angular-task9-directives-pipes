@@ -1,0 +1,24 @@
+<div class="container my-5">
+    <h2 class="text-center text-black-50 mb-3 text-decoration-underline">Service Practice</h2>
+    <p class="text-center text-black-50">The data has been used from common.service.ts component and can be used by multiple component at same time</p>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.username}}</td>
+                <td>{{user.email}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
