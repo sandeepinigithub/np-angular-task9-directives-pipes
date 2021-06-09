@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { SearchFilterPipe } from './pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
+import { OnlineStatusComponent } from './online-status/online-status.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { UsersComponent } from './users/users.component';
     HighlightDirective,
     HomeComponent,
     SearchFilterPipe,
-    UsersComponent
+    UsersComponent,
+    OnlineStatusComponent
   ],
   imports: [
     BrowserModule,
