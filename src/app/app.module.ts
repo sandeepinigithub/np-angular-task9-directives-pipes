@@ -11,6 +11,7 @@ import { SearchFilterPipe } from './pipes/search.pipe';
 import { FormsModule } from '@angular/forms';
 import { UsersComponent } from './users/users.component';
 import { OnlineStatusComponent } from './online-status/online-status.component';
+import { NavigatorStatusComponent } from './navigator-status/navigator-status.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OnlineStatusComponent } from './online-status/online-status.component';
     HomeComponent,
     SearchFilterPipe,
     UsersComponent,
-    OnlineStatusComponent
+    OnlineStatusComponent,
+    NavigatorStatusComponent
   ],
   imports: [
     BrowserModule,

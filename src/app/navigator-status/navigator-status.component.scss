@@ -1,0 +1,25 @@
+.navigator__container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem;
+    &__wrapper{
+        text-align: right;
+        margin-right: 1rem;
+        & h4{
+            color: grey;
+            margin-bottom: 1rem;
+        }
+        &--online{
+            background-color: green;
+            padding:0.5rem;
+            color: white;
+        }
+        &--offline{
+            background-color: red;
+            padding:0.5rem;
+            color: white;
+        }
+
+    }
+}

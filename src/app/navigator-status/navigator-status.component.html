@@ -1,0 +1,8 @@
+<div class="navigator__container">
+    <div class="navigator__container__wrapper">
+        <h4>Navigator Details</h4>
+        <p>Network Status : <span [ngClass] = "{'navigator__container__wrapper--online' : networkStatus ===true ,'navigator__container__wrapper--offline' : networkStatus ===false  }">{{networkMsg}} </span></p>        
+        <p>Browser Name : <span>{{browserName}} </span></p>             
+    </div>
+
+</div>
